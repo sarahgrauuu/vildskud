@@ -9,11 +9,14 @@ module.exports = {
       orange: "#FFA92C",
       green: "#4FB47D",
       black: "#212121",
-      white: "#F3F3F3"
-
-
-    }
-    extend: {},
+      white: "#F3F3F3",
+    },
+    extend: {
+      fontFamily: {
+        Righteous: ["Righteous", "sans-serif"],
+        Quicksand: ["Quicksand", "cursive"],
+      }
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
