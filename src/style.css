@@ -5,3 +5,33 @@
 /* font-family: 'Quicksand', sans-serif;
 font-family: 'Righteous', cursive; */
 
+* {
+    box-sizing: border-box ;
+    padding: 0;
+    margin: 0;
+}
+
+/* font styling */
+
+
+h1 {
+    font-family: 'Righteous', "cursive";
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'Righteous', "cursive";
+    font-size: 1.750rem;
+}
+
+h3 {
+    font-family: 'Righteous', "cursive";
+    font-size: 1.500rem;
+}
+
+h4 {
+    font-family: 'Quicksand', "sans-serif";
+    font-size: 1.500rem;
+    font-weight: 700; 
+}
+
