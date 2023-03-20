@@ -6,7 +6,7 @@
 font-family: 'Righteous', cursive; */
 
 * {
-    box-sizing: border-box ;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -32,6 +32,25 @@ h3 {
 h4 {
     font-family: 'Quicksand', "sans-serif";
     font-size: 1.500rem;
-    font-weight: 700; 
+    font-weight: 700;
 }
 
+h5 {
+    font-family: 'Quicksand', "sans-serif";
+    font-size: 1.500rem;
+    font-size: 500;
+}
+
+p {
+    font-family: 'Quicksand', "sans-serif";
+}
+
+.paragraph1 {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.paragraph2 {
+    font-size: 1.000rem;
+    font-weight: 400;
+}
