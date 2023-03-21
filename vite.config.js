@@ -15,6 +15,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "src/index.html"),
         event1: resolve(__dirname, "src/event1.html"),
+        program: resolve(__dirname, "src/program.html"),
       },
     },
   },
