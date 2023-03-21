@@ -10,6 +10,8 @@
         href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Righteous&display=swap"
         rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- alphine script -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Program</title>
 </head>
 
@@ -32,7 +34,8 @@
         <section>
             <h1 class="uppercase text-center pt-2.5">Program</h1>
             <div class="flex flex-row justify-around pt-2.5">
-                <button class="filtercontainer flex flex-row gap-4 items-center py-0.5 px-1.5 border border-black">
+                <button id="filter"
+                    class="filtercontainer flex flex-row gap-4 items-center py-0.5 px-1.5 border border-black">
                     <span class="filtername">
                         Dage
                     </span>
@@ -56,8 +59,42 @@
                         <path d="M2 0.999999L24 1L12.8642 12L2 0.999999Z" fill="#0A0606" stroke="black" />
                     </svg>
                 </button>
-
-
+            </div>
+            <div id="programlist" class="flex flex-col">
+                <h3 id="datelabel" class="text-center mt-6">Tirsdag - 2/8</h3>
+                <article class="flex flex-col
+                mx-1 mt-1.5 py-0.5 px-1 bg-orange rounded-tl-lg rounded-br-lg">
+                    <a href="">
+                        <h4 class="category">Event</h4>
+                        <h2>Åbningsceremoni</h2>
+                        <div class="flex flex-row justify-between">
+                            <h4>Vox</h4>
+                            <h4>16:00</h4>
+                        </div>
+                    </a>
+                </article>
+                <article class="flex flex-col
+                mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg">
+                    <a href="">
+                        <h4 class="category">Event</h4>
+                        <h2>Åbningsceremoni</h2>
+                        <div class="flex flex-row justify-between">
+                            <h4>Vox</h4>
+                            <h4>16:00</h4>
+                        </div>
+                    </a>
+                </article>
+                <article class="flex flex-col
+                mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg">
+                    <a href="">
+                        <h4 class="category">Event</h4>
+                        <h2>Åbningsceremoni</h2>
+                        <div class="flex flex-row justify-between">
+                            <h4>Vox</h4>
+                            <h4>16:00</h4>
+                        </div>
+                    </a>
+                </article>
             </div>
         </section>
     </main>
