@@ -5,6 +5,8 @@ module.exports = {
     "./src/index.html",
     "./src/event1.html",
     "./src/event2.html",
+    "./src/event3.html",
+    "./src/opencall.html",
   ],
 
   theme: {
