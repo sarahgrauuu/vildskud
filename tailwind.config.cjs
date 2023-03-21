@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,vue,js,ts,jsx,tsx}"],
+  content: [
+    "./src/**/*.{html,vue,js,ts,jsx,tsx}",
+    "./src/index.html",
+    "./src/event1.html",
+  ],
+
   theme: {
     colors: {
       yellow: "#FDE76F",
@@ -15,7 +20,7 @@ module.exports = {
       fontFamily: {
         Righteous: ["Righteous", "sans-serif"],
         Quicksand: ["Quicksand", "cursive"],
-      }
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
