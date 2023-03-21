@@ -54,3 +54,9 @@ p {
     font-size: 1.000rem;
     font-weight: 400;
 }
+
+.filtername {
+    font-family: 'Quicksand', "sans-serif";
+    font-size: 1rem;
+    font-weight: 600;
+}
