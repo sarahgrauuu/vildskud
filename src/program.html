@@ -33,19 +33,31 @@
     <main class="flex flex-col justify-center">
         <section>
             <h1 class="uppercase text-center pt-2.5">Program</h1>
-            <div class="flex flex-row justify-around pt-2.5" 
-            x-data="{
-                open: false
-            }">
-                <button id="filter" @click="open = true"
-                    class="filtercontainer flex flex-row gap-4 items-center py-0.5 px-1.5 border border-black">
-                    <span class="filtername">
-                        Dage
-                    </span>
-                    <svg width="26" height="13" viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2 0.999999L24 1L12.8642 12L2 0.999999Z" fill="#0A0606" stroke="black" />
-                    </svg>
-                </button>
+            <!-- <div class="flex flex-row justify-around pt-2.5" x-data="{ open: false }">
+                <div class="flex flex-col">
+                    <button id="filter" @click="open = true"
+                        class="filtercontainer flex flex-row gap-4 items-center py-0.5 px-1.5 border border-black"
+                        @click="open = true">
+                        <span class="filtername">
+                            Dage
+                        </span>
+                        <svg width="26" height="13" viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 0.999999L24 1L12.8642 12L2 0.999999Z" fill="#0A0606" stroke="black" />
+                        </svg>
+                    </button>
+            
+                    <div class="rela" x-show="open" x-cloak @click-away=" open = false">
+                        <div class="flex flex-col" role="menu" aria-orientation="vertical" aria-labelledby="menu">
+                            <a href="#" role="menuitem">Alle Dage</a>
+                            <a href="#" role="menuitem">Tirs - 2/8</a>
+                            <a href="#" role="menuitem">Ons - 3/8</a>
+                            <a href="#" role="menuitem">Tors - 4/8</a>
+                            <a href="#" role="menuitem">Fre - 5/8</a>
+                            <a href="#" role="menuitem">Lør - 6/8</a>
+                        </div>
+                    </div>
+                </div>
+
                 <button class="filtercontainer flex flex-row gap-4 items-center py-0.5 px-1.5 border border-black">
                     <span class="filtername">
                         Tid
@@ -62,43 +74,72 @@
                         <path d="M2 0.999999L24 1L12.8642 12L2 0.999999Z" fill="#0A0606" stroke="black" />
                     </svg>
                 </button>
-            </div>
-            <div id="programlist" class="flex flex-col">
-                <h3 id="datelabel" class="text-center mt-6">Tirsdag - 2/8</h3>
-                <article class="flex flex-col
+            </div> -->
+
+
+            <div id="programlistsection-container" x-data="{spilledage:'alledage', tid:'alle tidspunkter', venue:'allevenues', skjulteforestillinger : 0}">
+                <form id="filters" class="flex flex-row justify-around  pt-2.5">
+                    <div id="dage" >
+                        <select name="spilledage" x-model="spilledage" form="filters">
+                            <option value="alledage">Alle Dage</option>
+                            <option value="tirsdag">Tirs - 2/8</option>
+                            <option value="onsdag">Ons - 3/8</option>
+                            <option value="torsdag">Tors - 4/8</option>
+                            <option value="fredag">Fre - 5/8</option>
+                            <option alue="lørdag">Lør - 6/8</option>
+                        </select>
+                   </div>
+                   <div id="tid" >
+                       <select name="tid" xmodel="tid" form="filters">
+                            <option value="">Alle Tidspunkter</option>
+                            
+                        </select>
+                    </div>
+                    <div id="venue" >
+                        <select name="venue" xmodel="venue" form="filters">
+                             <option value="">Alle Venues</option>
+                             
+                         </select>
+                     </div>
+                </form>
+                <div id="programlist" class="flex flex-col">
+                    <h3 id="datelabel" class="text-center mt-6">Tirsdag - 2/8</h3>
+                    <article class="flex flex-col
                 mx-1 mt-1.5 py-0.5 px-1 bg-orange rounded-tl-lg rounded-br-lg">
-                    <a href="">
-                        <h4 class="category">Event</h4>
-                        <h2>Åbningsceremoni</h2>
-                        <div class="flex flex-row justify-between">
-                            <h4>Vox</h4>
-                            <h4>16:00</h4>
-                        </div>
-                    </a>
-                </article>
-                <article class="flex flex-col
+                        <a href="">
+                            <h4 class="category">Event</h4>
+                            <h2>Åbningsceremoni</h2>
+                            <div class="flex flex-row justify-between">
+                                <h4>Vox</h4>
+                                <h4>16:00</h4>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="flex flex-col
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg">
-                    <a href="">
-                        <h4 class="category">Event</h4>
-                        <h2>Åbningsceremoni</h2>
-                        <div class="flex flex-row justify-between">
-                            <h4>Vox</h4>
-                            <h4>16:00</h4>
-                        </div>
-                    </a>
-                </article>
-                <article class="flex flex-col
+                        <a href="">
+                            <h4 class="category">Event</h4>
+                            <h2>Åbningsceremoni</h2>
+                            <div class="flex flex-row justify-between">
+                                <h4>Vox</h4>
+                                <h4>16:00</h4>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="flex flex-col
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg">
-                    <a href="">
-                        <h4 class="category">Event</h4>
-                        <h2>Åbningsceremoni</h2>
-                        <div class="flex flex-row justify-between">
-                            <h4>Vox</h4>
-                            <h4>16:00</h4>
-                        </div>
-                    </a>
-                </article>
+                        <a href="">
+                            <h4 class="category">Event</h4>
+                            <h2>Åbningsceremoni</h2>
+                            <div class="flex flex-row justify-between">
+                                <h4>Vox</h4>
+                                <h4>16:00</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
             </div>
+
         </section>
     </main>
     <footer class="mb-4 mt-12">
