@@ -23,6 +23,7 @@ export default defineConfig({
         om: resolve(__dirname, "src/om.html"),
         kontakt: resolve(__dirname, "src/kontakt.html"),
         whatfires: resolve(__dirname, "src/whatfires.html"),
+        gogoyo: resolve(__dirname, "src/gogoyo.html"),
       },
     },
   },

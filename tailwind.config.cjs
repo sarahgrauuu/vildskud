@@ -12,6 +12,7 @@ module.exports = {
     "./src/om.html",
     "./src/kontakt.html",
     "./src/whatfires.html",
+    "./src/gogoyo.html",
   ],
 
   theme: {
