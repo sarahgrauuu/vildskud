@@ -20,6 +20,7 @@ export default defineConfig({
         opencall: resolve(__dirname, "src/opencall.html"),
         program: resolve(__dirname, "src/program.html"),
         frivillige: resolve(__dirname, "src/frivillige.html"),
+        om: resolve(__dirname, "src/om.html"),
       },
     },
   },
