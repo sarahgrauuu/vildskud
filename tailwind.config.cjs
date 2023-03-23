@@ -9,6 +9,8 @@ module.exports = {
     "./src/opencall.html",
     "./src/program.html",
     "./src/frivillige.html",
+    "./src/om.html",
+    "./src/kontakt.html",
   ],
 
   theme: {
