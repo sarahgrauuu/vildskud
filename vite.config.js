@@ -19,6 +19,7 @@ export default defineConfig({
         event3: resolve(__dirname, "src/event3.html"),
         opencall: resolve(__dirname, "src/opencall.html"),
         program: resolve(__dirname, "src/program.html"),
+        frivillige: resolve(__dirname, "src/frivillige.html"),
       },
     },
   },

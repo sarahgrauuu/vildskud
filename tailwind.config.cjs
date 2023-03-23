@@ -8,6 +8,7 @@ module.exports = {
     "./src/event3.html",
     "./src/opencall.html",
     "./src/program.html",
+    "./src/frivillige.html",
   ],
 
   theme: {
