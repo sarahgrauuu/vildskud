@@ -24,6 +24,7 @@ export default defineConfig({
         kontakt: resolve(__dirname, "src/kontakt.html"),
         whatfires: resolve(__dirname, "src/whatfires.html"),
         gogoyo: resolve(__dirname, "src/gogoyo.html"),
+        rebirth: resolve(__dirname, "src/rebirth.html"),
       },
     },
   },
