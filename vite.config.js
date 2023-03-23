@@ -22,6 +22,7 @@ export default defineConfig({
         frivillige: resolve(__dirname, "src/frivillige.html"),
         om: resolve(__dirname, "src/om.html"),
         kontakt: resolve(__dirname, "src/kontakt.html"),
+        whatfires: resolve(__dirname, "src/whatfires.html"),
       },
     },
   },

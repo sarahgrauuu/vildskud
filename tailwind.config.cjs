@@ -11,6 +11,7 @@ module.exports = {
     "./src/frivillige.html",
     "./src/om.html",
     "./src/kontakt.html",
+    "./src/whatfires.html",
   ],
 
   theme: {
