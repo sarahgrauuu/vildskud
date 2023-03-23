@@ -25,6 +25,7 @@ export default defineConfig({
         whatfires: resolve(__dirname, "src/whatfires.html"),
         gogoyo: resolve(__dirname, "src/gogoyo.html"),
         rebirth: resolve(__dirname, "src/rebirth.html"),
+        frygten: resolve(__dirname, "src/frygten.html"),
       },
     },
   },

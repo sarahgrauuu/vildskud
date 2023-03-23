@@ -14,6 +14,7 @@ module.exports = {
     "./src/whatfires.html",
     "./src/gogoyo.html",
     "./src/rebirth.html",
+    "./src/frygten.html",
   ],
 
   theme: {
