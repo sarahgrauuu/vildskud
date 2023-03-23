@@ -21,6 +21,7 @@ export default defineConfig({
         program: resolve(__dirname, "src/program.html"),
         frivillige: resolve(__dirname, "src/frivillige.html"),
         om: resolve(__dirname, "src/om.html"),
+        kontakt: resolve(__dirname, "src/kontakt.html"),
       },
     },
   },
