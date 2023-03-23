@@ -33,8 +33,11 @@
     <main class="flex flex-col justify-center">
         <section>
             <h1 class="uppercase text-center pt-2.5">Program</h1>
-            <div class="flex flex-row justify-around pt-2.5">
-                <button id="filter"
+            <div class="flex flex-row justify-around pt-2.5" 
+            x-data="{
+                open: false
+            }">
+                <button id="filter" @click="open = true"
                     class="filtercontainer flex flex-row gap-4 items-center py-0.5 px-1.5 border border-black">
                     <span class="filtername">
                         Dage
