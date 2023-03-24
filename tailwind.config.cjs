@@ -15,6 +15,8 @@ module.exports = {
     "./src/gogoyo.html",
     "./src/rebirth.html",
     "./src/frygten.html",
+    "./src/vildmedmig.html",
+    "./src/livingroom.html",
   ],
 
   theme: {

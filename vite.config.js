@@ -26,6 +26,8 @@ export default defineConfig({
         gogoyo: resolve(__dirname, "src/gogoyo.html"),
         rebirth: resolve(__dirname, "src/rebirth.html"),
         frygten: resolve(__dirname, "src/frygten.html"),
+        vildmedmig: resolve(__dirname, "src/vildmedmig.html"),
+        livingroom: resolve(__dirname, "src/livingroom.html"),
       },
     },
   },
