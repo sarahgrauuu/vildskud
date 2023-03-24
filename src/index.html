@@ -14,58 +14,115 @@
   </head>
 
   <body class="bg-white">
-      <nav>
-        <section class="mt-6 flex flex-nowrap justify-around align-middle">
-          <div class="pb- h-14 w-14">
-            <img src="img/nav_logo_home.svg" alt="" srcset="" />
-          </div>
-          <div class="h-15 w-14 pt-2">
-            <img src="img/nav_button_program.svg" alt="" srcset="" />
-          </div>
-          <div class="h-12 w-12 pt-1">
-            <img src="img/nav_button_billetter.svg" alt="" srcset="" />
-          </div>
-        </section>
-      </nav>
-      <section class="flex flex-col items-center">
-      <img src="img/HERO.svg" alt="hero" srcset=""/>
-      <h5 class="pt-5 pb-3">Festivalen starter om præcis:</h5>
+    <nav>
+      <section class="mt-6 flex flex-nowrap justify-around align-middle">
+        <div class="pb- h-14 w-14">
+          <img src="img/nav_logo_home.svg" alt="" srcset="" />
+        </div>
+        <div class="h-15 w-14 pt-2">
+          <img src="img/nav_button_program.svg" alt="" srcset="" />
+        </div>
+        <div class="h-12 w-12 pt-1">
+          <img src="img/nav_button_billetter.svg" alt="" srcset="" />
+        </div>
       </section>
+    </nav>
+    <section class="flex flex-col items-center">
+      <img src="img/HERO.svg" alt="hero" srcset="" />
+      <h5 class="pt-5 pb-3">Festivalen starter om præcis:</h5>
+    </section>
 
-      <!-- Display the countdown timer in an element -->
-      <section class="pt-5 pb-6 bg-yellow font-Righteous flex flex-col items-center" id="demo"></section>
+    <!-- Display the countdown timer in an element -->
+    <section
+      class="flex flex-col items-center bg-yellow pt-5 pb-6 font-Righteous"
+      id="demo"
+    ></section>
 
-      <script>
+    <script>
       // Set the date we're counting down to
       var countDownDate = new Date("Aug 8, 2023 12:00:00").getTime();
 
       // Update the count down every 1 second
-      var x = setInterval(function() {
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
 
-      // Get today's date and time
-      var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
 
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML =
+          days +
+          " dage " +
+          hours +
+          " timer " +
+          minutes +
+          " minutter " +
+          seconds +
+          " sekunder ";
 
-      // Display the result in the element with id="demo"
-      document.getElementById("demo").innerHTML = days + " dage " + hours + " timer "
-      + minutes + " minutter " + seconds + " sekunder ";
-
-      // If the count down is finished, write some text
-      if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-      }
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
       }, 1000);
-     </script>
-      
+    </script>
+    <footer class="mb-4 mt-12">
+      <h3 class="mb-4 text-center">Følg os!</h3>
+      <div class="flex flex-row justify-center">
+        <a
+          href="https://www.instagram.com/vildskud_festival/"
+          aria-label="Vildskud Festival Instagram"
+          ><img
+            href="https://www.instagram.com/vildskud_festival/"
+            class="mr-2"
+            src="img/icon _instagram_.svg"
+            alt=""
+            srcset=""
+          />
+        </a>
+
+        <a
+          href="https://www.facebook.com/vildskudfestival"
+          aria-label="Vildskud Festival Facebook"
+        >
+          <svg
+            width="26"
+            height="44"
+            viewBox="0 0 26 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M24 2H18C15.3478 2 12.8043 3.05357 10.9289 4.92893C9.05357 6.8043 8 9.34784 8 12V18H2V26H8V42H16V26H22L24 18H16V12C16 11.4696 16.2107 10.9609 16.5858 10.5858C16.9609 10.2107 17.4696 10 18 10H24V2Z"
+              stroke="black"
+              stroke-width="2.36492"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+      <p class="mt-5 mb-5 text-center"><a href="om.html">OM VILDSKUD</a></p>
+      <p class="mt-5 mb-3 text-center font-bold">VÆR MED!</p>
+      <p class="mt-2 text-center"><a href="opencall.html">OPEN CALL</a></p>
+      <p class="mb-5 text-center"><a href="frivillige.html">FRIVILLIGE</a></p>
+      <p class="mb-5 text-center"><a href="kontakt.html">KONTAKT</a></p>
+      <div class="mb-2 flex justify-center">
+        <p class="mr-2">Cookiepolitik</p>
+        <p>Privatelivspolitik</p>
+      </div>
+      <p class="text-center font-bold">© 2023 Vildskud</p>
+    </footer>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
