@@ -17,6 +17,12 @@ module.exports = {
     "./src/frygten.html",
     "./src/vildmedmig.html",
     "./src/livingroom.html",
+    "./src/sitemap.html",
+    "./src/billetter.html",
+    "./src/aabningsceremoni.html",
+    "./src/mandliggersommandharredt.html",
+
+
   ],
 
   theme: {
