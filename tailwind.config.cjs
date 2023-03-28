@@ -21,8 +21,6 @@ module.exports = {
     "./src/billetter.html",
     "./src/aabningsceremoni.html",
     "./src/mandliggersommandharredt.html",
-
-
   ],
 
   theme: {
@@ -37,8 +35,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        Righteous: ["Righteous", "sans-serif"],
-        Quicksand: ["Quicksand", "cursive"],
+        Righteous: ["Righteous", "sans-serif", "unicode-range: U+0000-007F;"],
+        Quicksand: ["Quicksand", "cursive", "unicode-range: U+0000-007F;"],
       },
     },
   },

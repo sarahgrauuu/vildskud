@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* font-family: 'Quicksand', sans-serif;
-font-family: 'Righteous', cursive; */
-
-
-
 body {
     box-sizing: border-box;
     padding: 0;
@@ -31,13 +26,11 @@ h3 {
 h4 {
     font-family: 'Quicksand', "sans-serif";
     font-size: 1.500rem;
-    font-weight: 700;
 }
 
 h5 {
     font-family: 'Quicksand', "sans-serif";
-    font-size: 1.500rem;
-    font-size: 500;
+    font-size: 1.500re
 }
 
 p {
@@ -46,25 +39,22 @@ p {
 
 .paragraph1 {
     font-size: 1.125rem;
-    font-weight: 500;
 }
 
 .paragraph2 {
     font-size: 1.000rem;
-    font-weight: 400;
 }
 
 .filtername {
     font-family: 'Quicksand', "sans-serif";
     font-size: 1rem;
-    font-weight: 600;
 }
 
 h4.category {
- font-size: 1rem;   
+    font-size: 1rem;
 }
 
-h4.timeanddate{
+h4.timeanddate {
     font-size: 1rem;
 }
 
@@ -74,8 +64,4 @@ h2.forestillingTitle {
 
 option {
     font-size: 0.75rem;
-}
-
-.sitemaplink {
-    font-weight: 500;
 }
