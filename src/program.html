@@ -13,6 +13,8 @@
     <!-- alphine script -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Program</title>
+    <script type="module" crossorigin src="./assets/style-e551122c.js"></script>
+    <link rel="stylesheet" href="./assets/style-8f2f4273.css">
 </head>
 
 <body>
@@ -20,14 +22,16 @@
         <nav>
             <section class="mt-6 flex flex-nowrap justify-around align-middle">
                 <div class="pb- h-14 w-14">
-                    <a href="/index.html" aria-label="home"> <img src="img/nav_logo_home.svg" alt="" srcset="" /></a>
+                    <a href="index.html" aria-label="home"> <img src="./assets/nav_logo_home-376f1c11.svg" alt=""
+                            srcset="" /></a>
                 </div>
                 <div class="h-15 w-14 pt-2">
-                    <a href="#" aria-label="program"><img src="img/nav_button_program.svg" alt="" srcset="" /></a>
+                    <a href="program.html" aria-label="program"><img src="./assets/nav_button_program-5604cca7.svg"
+                            alt="" srcset="" /></a>
                 </div>
                 <div class="h-12 w-12 pt-1">
-                    <a href="/billetter.html" aria-label="billetter"><img src="img/nav_button_billetter.svg" alt=""
-                            srcset="" /></a>
+                    <a href="billetter.html" aria-label="billetter"><img
+                            src="./assets/nav_button_billetter-86809629.svg" alt="" srcset="" /></a>
                 </div>
             </section>
         </nav>
@@ -76,7 +80,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-orange rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','tirsdag'].includes(spilledage) && ['allevenues', 'vox'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/aabningsceremoni.html">
+                        <a href="aabningsceremoni.html">
                             <h4 class="category">Event</h4>
                             <h2 class="forestillingTitle">Åbningsceremoni</h2>
                             <div class="flex flex-row justify-between">
@@ -89,7 +93,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','tirsdag'].includes(spilledage) && ['allevenues', 'zebu'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/whatfires.html">
+                        <a href="whatfires.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">What fires together wires together</h2>
                             <div class="flex flex-row justify-between">
@@ -102,7 +106,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','tirsdag'].includes(spilledage) && ['allevenues', 'vox'].includes(venue) && ['alletidspunkter', 'aften'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/vildmedmig.html">
+                        <a href="vildmedmig.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Vild med mig</h2>
                             <div class="flex flex-row justify-between">
@@ -122,7 +126,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','onsdag'].includes(spilledage) && ['allevenues', 'vox'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/vildmedmig.html">
+                        <a href="vildmedmig.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Vild med mig</h2>
                             <div class="flex flex-row justify-between">
@@ -135,7 +139,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','onsdag'].includes(spilledage) && ['allevenues', 'zebu'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/whatfires.html">
+                        <a href="whatfires.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">What fires together wires together</h2>
                             <div class="flex flex-row justify-between">
@@ -148,7 +152,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-orange rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','onsdag'].includes(spilledage) && ['allevenues', 'ukirke'].includes(venue) && ['alletidspunkter', 'aften'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/event3.html">
+                        <a href="event3.html">
                             <h4 class="category">Event</h4>
                             <h2 class="forestillingTitle">Vildskud klæder dig på til scenekunst om tabu</h2>
                             <div class="flex flex-row justify-between">
@@ -161,7 +165,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','onsdag'].includes(spilledage) && ['allevenues', 'vox'].includes(venue) && ['alletidspunkter', 'aften'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/vildmedmig.html">
+                        <a href="vildmedmig.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Vild med mig</h2>
                             <div class="flex flex-row justify-between">
@@ -181,7 +185,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','torsdag'].includes(spilledage) && ['allevenues', 'downunder'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/rebirth.html">
+                        <a href="rebirth.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Re-birth</h2>
                             <div class="flex flex-row justify-between">
@@ -194,7 +198,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-orange rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','torsdag'].includes(spilledage) && ['allevenues', 'ukirke'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/event2.html">
+                        <a href="event2.html">
                             <h4 class="category">Event</h4>
                             <h2 class="forestillingTitle">Vildskud klæder dig på til ny dansk dramatik</h2>
                             <div class="flex flex-row justify-between">
@@ -207,7 +211,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','torsdag'].includes(spilledage) && ['allevenues', 'xenon'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/gogoyo.html">
+                        <a href="gogoyo.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Go Go Yo-Yoku</h2>
                             <div class="flex flex-row justify-between">
@@ -220,7 +224,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','torsdag'].includes(spilledage) && ['allevenues', 'downunder'].includes(venue) && ['alletidspunkter', 'aften'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/rebirth.html">
+                        <a href="rebirth.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Re-birth</h2>
                             <div class="flex flex-row justify-between">
@@ -233,7 +237,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','torsdag'].includes(spilledage) && ['allevenues', 'zebu'].includes(venue) && ['alletidspunkter', 'aften'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/livingroom.html">
+                        <a href="livingroom.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Det levende rum</h2>
                             <div class="flex flex-row justify-between">
@@ -246,7 +250,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','torsdag'].includes(spilledage) && ['allevenues', 'xenon'].includes(venue) && ['alletidspunkter', 'aften'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/gogoyo.html">
+                        <a href="gogoyo.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Go Go Yo-Yoku</h2>
                             <div class="flex flex-row justify-between">
@@ -259,7 +263,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','torsdag'].includes(spilledage) && ['allevenues', 'downunder'].includes(venue) && ['alletidspunkter', 'aften'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/rebirth.html">
+                        <a href="rebirth.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Re-birth</h2>
                             <div class="flex flex-row justify-between">
@@ -279,7 +283,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','fredag'].includes(spilledage) && ['allevenues', 'downunder'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/rebirth.html">
+                        <a href="rebirth.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Re-birth</h2>
                             <div class="flex flex-row justify-between">
@@ -292,7 +296,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-orange rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','fredag'].includes(spilledage) && ['allevenues', 'ukirke'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/event1.html">
+                        <a href="event1.html">
                             <h4 class="category">Event</h4>
                             <h2 class="forestillingTitle">Vildskud klæder dig på til fremtidens scenekunst</h2>
                             <div class="flex flex-row justify-between">
@@ -305,7 +309,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','fredag'].includes(spilledage) && ['allevenues', 'xenon'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/gogoyo.html">
+                        <a href="gogoyo.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Go Go Yo-Yoku</h2>
                             <div class="flex flex-row justify-between">
@@ -318,7 +322,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','fredag'].includes(spilledage) && ['allevenues', 'zebu'].includes(venue) && ['alletidspunkter', 'aften'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/livingroom.html">
+                        <a href="livingroom.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Det levende rum</h2>
                             <div class="flex flex-row justify-between">
@@ -331,7 +335,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','fredag'].includes(spilledage) && ['allevenues', 'downunder'].includes(venue) && ['alletidspunkter', 'aften'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/rebirth.html">
+                        <a href="rebirth.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Re-birth</h2>
                             <div class="flex flex-row justify-between">
@@ -345,7 +349,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','fredag'].includes(spilledage) && ['allevenues', 'xenon'].includes(venue) && ['alletidspunkter', 'aften'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/gogoyo.html">
+                        <a href="gogoyo.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Go Go Yo-Yoku</h2>
                             <div class="flex flex-row justify-between">
@@ -358,7 +362,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','fredag'].includes(spilledage) && ['allevenues', 'downunder'].includes(venue) && ['alletidspunkter', 'aften'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/rebirth.html">
+                        <a href="rebirth.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Re-birth</h2>
                             <div class="flex flex-row justify-between">
@@ -371,7 +375,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','fredag'].includes(spilledage) && ['allevenues', 'xenon'].includes(venue) && ['alletidspunkter', 'aften'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/frygten.html">
+                        <a href="frygten.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Frygten for ikke at leve</h2>
                             <div class="flex flex-row justify-between">
@@ -391,7 +395,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','lørdag'].includes(spilledage) && ['allevenues', 'xenon'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/frygten.html">
+                        <a href="frygten.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Frygten for ikke at leve</h2>
                             <div class="flex flex-row justify-between">
@@ -405,7 +409,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','lørdag'].includes(spilledage) && ['allevenues', 'zebu'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/livingroom.html">
+                        <a href="livingroom.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Det levende rum</h2>
                             <div class="flex flex-row justify-between">
@@ -418,7 +422,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','lørdag'].includes(spilledage) && ['allevenues', 'vox'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/mandliggersommandharredt.html">
+                        <a href="mandliggersommandharredt.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Mand ligger som mand har redt</h2>
                             <div class="flex flex-row justify-between">
@@ -431,7 +435,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','lørdag'].includes(spilledage) && ['allevenues', 'xenon'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/frygten.html">
+                        <a href="frygten.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Frygten for ikke at leve</h2>
                             <div class="flex flex-row justify-between">
@@ -445,7 +449,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','lørdag'].includes(spilledage) && ['allevenues', 'zebu'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/livingroom.html">
+                        <a href="livingroom.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Det levende rum</h2>
                             <div class="flex flex-row justify-between">
@@ -458,7 +462,7 @@
                 mx-1 mt-1.5 py-0.5 px-1 bg-yellow rounded-tl-lg rounded-br-lg"
                         :class="{hidden: !(['alledage','lørdag'].includes(spilledage) && ['allevenues', 'vox'].includes(venue) && ['alletidspunkter', 'eftermiddag'].includes(tid)) }"
                         x-on:change="testfunction();">
-                        <a href="/mandliggersommandharredt.html">
+                        <a href="mandliggersommandharredt.html">
                             <h4 class="category">Forestilling</h4>
                             <h2 class="forestillingTitle">Mand ligger som mand har redt</h2>
                             <div class="flex flex-row justify-between">
@@ -480,8 +484,8 @@
         <h3 class="mb-4 text-center">Følg os!</h3>
         <div class="flex flex-row justify-center">
             <a href="https://www.instagram.com/vildskud_festival/" aria-label="Vildskud Festival Instagram"><img
-                    href="https://www.instagram.com/vildskud_festival/" class="mr-2" src="img/icon _instagram_.svg"
-                    alt="" srcset="" />
+                    href="https://www.instagram.com/vildskud_festival/" class="mr-2"
+                    src="./assets/icon _instagram_-cdeaa952.svg" alt="" srcset="" />
             </a>
 
             <a href="https://www.facebook.com/vildskudfestival" aria-label="Vildskud Festival Facebook">
@@ -504,7 +508,7 @@
         </div>
         <p class="text-center font-bold">© 2023 Vildskud</p>
     </footer>
-    <script type="module" src="./main.js"></script>
+
     <script>
         function ingenforestillinger() {
             const skjulteforestillinger = document.querySelectorAll(".showet.hidden").length;
