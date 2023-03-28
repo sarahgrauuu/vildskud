@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" href="src/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,8 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Righteous&display=swap"
     rel="stylesheet" />
   <title>Mand ligger som mand har redt</title>
-  <script type="module" crossorigin src="./assets/style-e551122c.js"></script>
-  <link rel="stylesheet" href="./assets/style-8f2f4273.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="rounded-4xl min-h-screen border-8 border-solid border-black bg-white">
@@ -20,14 +18,14 @@
     <nav>
       <section class="mt-6 flex flex-nowrap justify-around align-middle">
         <div class="pb- h-14 w-14">
-          <a href="index.html" aria-label="home"> <img src="./assets/nav_logo_home-376f1c11.svg" alt="" srcset="" /></a>
+          <a href="index.html" aria-label="home"> <img src="/img/nav_logo_home.svg" alt="" srcset="" /></a>
         </div>
         <div class="h-15 w-14 pt-2">
-          <a href="program.html" aria-label="program"><img src="./assets/nav_button_program-5604cca7.svg" alt=""
+          <a href="program.html" aria-label="program"><img src="/img/nav_button_program.svg" alt=""
               srcset="" /></a>
         </div>
         <div class="h-12 w-12 pt-1">
-          <a href="billetter.html" aria-label="billetter"><img src="./assets/nav_button_billetter-86809629.svg" alt=""
+          <a href="billetter.html" aria-label="billetter"><img src="/img/nav_button_billetter.svg" alt=""
               srcset="" /></a>
         </div>
       </section>
@@ -36,7 +34,7 @@
   <main class="flex flex-col items-center">
     <div class="flex flex-col items-center">
       <div class="relative grid items-center justify-items-center">
-        <img class="static" src="./assets/enkelt1-3eb4dfc5.webp" alt="" srcset="" />
+        <img class="static" src="/img/enkelt1.webp" alt="" srcset="" />
 
       </div>
 
@@ -75,10 +73,19 @@
   </main>
   <footer class="mb-4 mt-12">
     <h3 class="mb-4 text-center">Følg os!</h3>
-    <div class="flex flex-row justify-center">
-      <a href="https://www.instagram.com/vildskud_festival/" aria-label="Vildskud Festival Instagram"><img
-          href="https://www.instagram.com/vildskud_festival/" class="mr-2" src="./assets/icon _instagram_-cdeaa952.svg"
-          alt="" srcset="" />
+    <div class="flex flex-row justify-center items-center">
+      <a href="https://www.instagram.com/vildskud_festival/" aria-label="Vildskud Festival Instagram">
+        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7.9934 51.25H44.0066C45.9277 51.25 47.7701 50.4869 49.1285 49.1285C50.4869 47.7701 51.25 45.9277 51.25 44.0066V7.9934C51.25 6.07233 50.4869 4.22994 49.1285 2.87154C47.7701 1.51314 45.9277 0.75 44.0066 0.75H7.9934C6.07233 0.75 4.22994 1.51314 2.87154 2.87154C1.51314 4.22994 0.75 6.07233 0.75 7.9934V44.0066C0.75 45.9277 1.51314 47.7701 2.87154 49.1285C4.22994 50.4869 6.07233 51.25 7.9934 51.25ZM5.20313 5.20313C5.94315 4.4631 6.94684 4.04736 7.9934 4.04736H44.0066C45.0532 4.04736 46.0568 4.4631 46.7969 5.20313C47.5369 5.94315 47.9526 6.94684 47.9526 7.9934V44.0066C47.9526 45.0532 47.5369 46.0568 46.7969 46.7969C46.0568 47.5369 45.0532 47.9526 44.0066 47.9526H7.9934C6.94684 47.9526 5.94315 47.5369 5.20313 46.7969C4.4631 46.0568 4.04736 45.0532 4.04736 44.0066V7.9934C4.04736 6.94684 4.4631 5.94315 5.20313 5.20313Z"
+            fill="black" stroke="black" stroke-width="0.5" />
+          <path
+            d="M25.9996 39.101H25.9999C29.476 39.101 32.81 37.7213 35.2696 35.265C37.7292 32.8086 39.1132 29.4764 39.1178 26.0003V26C39.1183 23.4088 38.3506 20.8756 36.9117 18.7206C35.4728 16.5656 33.4273 14.8856 31.0338 13.893C28.6403 12.9003 26.0062 12.6396 23.4645 13.1437C20.9228 13.6479 18.5876 14.8942 16.7541 16.7253C14.9207 18.5564 13.6712 20.8899 13.1638 23.431C12.6563 25.972 12.9136 28.6064 13.9032 31.0013C14.8927 33.3961 16.57 35.4438 18.7231 36.8855C20.8762 38.3272 23.4084 39.0982 25.9996 39.101ZM20.5572 17.8379C22.1677 16.7593 24.0618 16.1822 26.0001 16.1795C28.6046 16.1795 31.1024 17.2142 32.9441 19.0558C34.7857 20.8975 35.8203 23.3952 35.8204 25.9996C35.8177 27.938 35.2406 29.8321 34.162 31.4427C33.0834 33.0533 31.5517 34.3081 29.7604 35.0486C27.969 35.7892 25.9984 35.9822 24.0974 35.6034C22.1964 35.2246 20.4503 34.2909 19.0797 32.9202C17.709 31.5496 16.7753 29.8035 16.3965 27.9025C16.0177 26.0015 16.2107 24.0308 16.9513 22.2395C17.6918 20.4481 18.9466 18.9164 20.5572 17.8379Z"
+            fill="black" stroke="black" stroke-width="0.5" />
+          <path
+            d="M40.5463 14.7948C42.3452 14.7948 43.8035 13.3366 43.8035 11.5377C43.8035 9.7388 42.3452 8.28052 40.5463 8.28052C38.7475 8.28052 37.2892 9.7388 37.2892 11.5377C37.2892 13.3366 38.7475 14.7948 40.5463 14.7948Z"
+            fill="black" stroke="black" stroke-width="0.5" />
+        </svg>
       </a>
 
       <a href="https://www.facebook.com/vildskudfestival" aria-label="Vildskud Festival Facebook">
@@ -97,11 +104,43 @@
     <p class="mb-5 text-center"><a href="sitemap.html">Site Map</a></p>
     <p class="mb-5 text-center"><a href="sitemap.html">Site Map</a></p>
     <div class="mb-2 flex justify-center">
-      <p class="mr-2">Cookiepolitik</p>
-      <p>Privatelivspolitik</p>
-    </div>
-    <p class="text-center font-bold">© 2023 Vildskud</p>
-  </footer>
+      <p class="mr-2">Cook<footer class="mb-4 mt-12">
+        <h3 class="mb-4 text-center">Følg os!</h3>
+        <div class="flex flex-row justify-center items-center gap-5">
+          <a href="https://www.instagram.com/vildskud_festival/" aria-label="Vildskud Festival Instagram">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.9934 51.25H44.0066C45.9277 51.25 47.7701 50.4869 49.1285 49.1285C50.4869 47.7701 51.25 45.9277 51.25 44.0066V7.9934C51.25 6.07233 50.4869 4.22994 49.1285 2.87154C47.7701 1.51314 45.9277 0.75 44.0066 0.75H7.9934C6.07233 0.75 4.22994 1.51314 2.87154 2.87154C1.51314 4.22994 0.75 6.07233 0.75 7.9934V44.0066C0.75 45.9277 1.51314 47.7701 2.87154 49.1285C4.22994 50.4869 6.07233 51.25 7.9934 51.25ZM5.20313 5.20313C5.94315 4.4631 6.94684 4.04736 7.9934 4.04736H44.0066C45.0532 4.04736 46.0568 4.4631 46.7969 5.20313C47.5369 5.94315 47.9526 6.94684 47.9526 7.9934V44.0066C47.9526 45.0532 47.5369 46.0568 46.7969 46.7969C46.0568 47.5369 45.0532 47.9526 44.0066 47.9526H7.9934C6.94684 47.9526 5.94315 47.5369 5.20313 46.7969C4.4631 46.0568 4.04736 45.0532 4.04736 44.0066V7.9934C4.04736 6.94684 4.4631 5.94315 5.20313 5.20313Z"
+                fill="black" stroke="black" stroke-width="0.5" />
+              <path
+                d="M25.9996 39.101H25.9999C29.476 39.101 32.81 37.7213 35.2696 35.265C37.7292 32.8086 39.1132 29.4764 39.1178 26.0003V26C39.1183 23.4088 38.3506 20.8756 36.9117 18.7206C35.4728 16.5656 33.4273 14.8856 31.0338 13.893C28.6403 12.9003 26.0062 12.6396 23.4645 13.1437C20.9228 13.6479 18.5876 14.8942 16.7541 16.7253C14.9207 18.5564 13.6712 20.8899 13.1638 23.431C12.6563 25.972 12.9136 28.6064 13.9032 31.0013C14.8927 33.3961 16.57 35.4438 18.7231 36.8855C20.8762 38.3272 23.4084 39.0982 25.9996 39.101ZM20.5572 17.8379C22.1677 16.7593 24.0618 16.1822 26.0001 16.1795C28.6046 16.1795 31.1024 17.2142 32.9441 19.0558C34.7857 20.8975 35.8203 23.3952 35.8204 25.9996C35.8177 27.938 35.2406 29.8321 34.162 31.4427C33.0834 33.0533 31.5517 34.3081 29.7604 35.0486C27.969 35.7892 25.9984 35.9822 24.0974 35.6034C22.1964 35.2246 20.4503 34.2909 19.0797 32.9202C17.709 31.5496 16.7753 29.8035 16.3965 27.9025C16.0177 26.0015 16.2107 24.0308 16.9513 22.2395C17.6918 20.4481 18.9466 18.9164 20.5572 17.8379Z"
+                fill="black" stroke="black" stroke-width="0.5" />
+              <path
+                d="M40.5463 14.7948C42.3452 14.7948 43.8035 13.3366 43.8035 11.5377C43.8035 9.7388 42.3452 8.28052 40.5463 8.28052C38.7475 8.28052 37.2892 9.7388 37.2892 11.5377C37.2892 13.3366 38.7475 14.7948 40.5463 14.7948Z"
+                fill="black" stroke="black" stroke-width="0.5" />
+            </svg>
+          </a>
+    
+          <a href="https://www.facebook.com/vildskudfestival" aria-label="Vildskud Festival Facebook">
+            <svg width="26" height="44" viewBox="0 0 26 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 2H18C15.3478 2 12.8043 3.05357 10.9289 4.92893C9.05357 6.8043 8 9.34784 8 12V18H2V26H8V42H16V26H22L24 18H16V12C16 11.4696 16.2107 10.9609 16.5858 10.5858C16.9609 10.2107 17.4696 10 18 10H24V2Z"
+                stroke="black" stroke-width="2.36492" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <p class="mt-5 mb-5 text-center"><a href="om.html">OM VILDSKUD</a></p>
+        <p class="mt-5 mb-3 text-center font-bold">VÆR MED!</p>
+        <p class="mt-2 text-center"><a href="opencall.html">OPEN CALL</a></p>
+        <p class="mb-5 text-center"><a href="frivillige.html">FRIVILLIGE</a></p>
+        <p class="mb-5 text-center"><a href="kontakt.html">KONTAKT</a></p>
+        <p class="mb-5 text-center"><a href="sitemap.html">Site Map</a></p>
+        <div class="mb-2 flex justify-center">
+          <p class="mr-2">Cookiepolitik</p>
+          <p>Privatelivspolitik</p>
+        </div>
+        <p class="text-center font-bold">© 2023 Vildskud</p>
+      </footer>
 
 </body>
 
