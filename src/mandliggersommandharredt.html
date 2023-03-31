@@ -18,28 +18,28 @@
     <nav>
       <ul class="mt-6 flex flex-nowrap justify-around align-middle">
         <li class="pb- h-14 w-14">
-          <a href="index.html" aria-label="home"> <img src="/img/nav_logo_home.svg" alt="" srcset="" /></a>
+          <a href="index.html" aria-label="home"> <img src="img/nav_logo_home.svg" alt="" srcset="" /></a>
         </li>
         <li class="h-15 w-14 pt-2">
-          <a href="program.html" aria-label="program"><img src="/img/nav_button_program.svg" alt="" srcset="" /></a>
+          <a href="program.html" aria-label="program"><img src="img/nav_button_program.svg" alt="" srcset="" /></a>
         </li>
         <li class="h-12 w-12 pt-1">
-          <a href="billetter.html" aria-label="billetter"><img src="/img/nav_button_billetter.svg" alt=""
+          <a href="billetter.html" aria-label="billetter"><img src="img/nav_button_billetter.svg" alt=""
               srcset="" /></a>
         </li>
       </ul>
     </nav>
   </header>
-  <main itemtype="https://schema.org/TheaterEvent" class="flex flex-col items-center">
+  <main itemscope itemtype="https://schema.org/TheaterEvent" class="flex flex-col items-center">
     <div class="flex flex-col items-center">
       <div class="relative grid items-center justify-items-center">
-        <img itemprop="image" class="static" src="/img/enkelt1.webp" alt="poster for forestillingen" srcset="" />
+        <img itemprop="image" class="static" src="img/enkelt1.webp" alt="poster for forestillingen" srcset="" />
       </div>
 
-      <h1 itemprop="about" class="mt-6 mb-2 text-left">
+      <h1 itemprop="name" class="mt-6 mb-2 mx-2 text-left">
         Mand ligger som mand har redt
       </h1>
-      <p itemprop="about" class="prose-p: mx-2 mt-7 mb-8 text-center font-medium">
+      <p itemprop="about" class="prose-p: mx-2 mt-7 mb-8 text-left font-medium">
         En forestilling af Kill Your Darlings Hvad sker der mellem mænd når der ikke er andre til stede? Logen: Et sted
         hvor kun mænd er velkomne. Hvor mænd føler sig trygge, men også hvor alt er på spil, både for dem som individer
         og som gruppe. Et nyt medlem skal optages i logen og indvies i broderskabets fællesskab, ritualer og kutymer.
@@ -51,12 +51,12 @@
         <h2 class="text-center text-md">Spilletider</h2>
         <div class="grid grid-cols-2 gap-y-6">
           <div class="my-5 font-semibold grid grid-cols-1 justify-items-start">
-            <p class="my-1.5 text-left">Fre - 5/8</p>
+            <p itemprop="startDate" class="my-1.5 text-left">Fre - 5/8</p>
             <button
               class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">19:15</button>
           </div>
           <div class="my-5 font-semibold grid grid-cols-1 justify-items-center gap-x-2">
-            <p class="my-1.5 text-left">Lør - 6/8</p>
+            <p itemprop="endDate" class="my-1.5 text-left">Lør - 6/8</p>
             <button
               class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">13:00</button>
             <button
