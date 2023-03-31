@@ -12,7 +12,7 @@
   <title>Vildskud</title>
 </head>
 
-<body class="max-w-3xl mx-auto">
+<body class="max-w-3xl mx-auto bg-white">
   <header>
     <nav>
       <section class="mt-6 flex flex-nowrap justify-around align-middle">
@@ -40,14 +40,13 @@
       </section>
     </nav>
   </header>
-  <main>
+  <main class="sm:h-[100vh]">
     <!-- Hero Section -->
-    <section class="flex flex-col items-center my-auto sm:h-[70vh]">
+    <section class="flex flex-col items-center my-auto sm:h-[50vh]">
       <div class="grid grid-cols-1 gap-5 grid-rows-6 justify-items-center items-end">
         <img class="mt-6 relative row-span-full" src="img/HERO.svg" alt="">
-        <button
-          class="absolute mb-4 row-start-6 row-end-7 px-3 py-2 font-medium border border-b-4 border-r-4 bg-white border-yellow rounded-lg shadow-lg"><a
-            class="font-Righteous" href="billetter.html">KØB
+        <button class="pulse absolute mb-4 row-start-6 row-end-7 px-3 py-2 font-medium border border-b-4 border-r-4 bg-white border-yellow 
+           rounded-lg shadow-lg hover:bg-blue hover:text-white hover:border-green"><a class="font-Righteous" href="billetter.html">KØB
             BILLET</a></button>
       </div>
       <h5 class="pt-5 pb-3">Festivalen starter om præcis:</h5>
@@ -89,19 +88,19 @@
         }, 1000);
       </script>
     </section>
-    <div class="grid my-28 justify-items-center">
+    <div class="grid my-28 justify-items-center sm:h-[30vh]">
       <a class="underline uppercase font-Righteous text-xl" href="program.html">Se Festivalens Program</a>
       <svg class="my-20" width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M39 78C38.922 56.4874 21.4911 39.0723 0 39.0723C21.5391 39.0723 39 21.5788 39 0C39.0776 21.5126 56.5089 38.9277 78 38.9277C56.4605 38.9277 39 56.4212 39 78Z"
-          fill="#212121" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M39 78C38.922 56.4874 21.4911 39.0723 0 39.0723C21.5391 39.0723 39 
+         21.5788 39 0C39.0776 21.5126 56.5089 38.9277 78 
+           38.9277C56.4605 38.9277 39 56.4212 39 78Z" fill="#212121" />
       </svg>
       <p class="paragraph1 text-center">Vildskud er Københavns festival for uafhængig scenekunst. Vær med, se med.
         Vildskud er for alle der er interesserede i at dyrke og støtte spirende og uafhængige scenekunstnere.
       </p>
     </div>
   </main>
-  <footer class="mb-4 mt-12">
+  <footer class="mb-4 mt-[15vh] border-t pt-5">
     <h3 class="mb-4 text-center">Følg os!</h3>
     <div class="flex flex-row justify-center items-center gap-5">
       <a href="https://www.instagram.com/vildskud_festival/" aria-label="Vildskud Festival Instagram">
@@ -117,6 +116,7 @@
             fill="black" stroke="black" stroke-width="0.5" />
         </svg>
       </a>
+
       <a href="https://www.facebook.com/vildskudfestival" aria-label="Vildskud Festival Facebook">
         <svg width="26" height="44" viewBox="0 0 26 44" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
