@@ -31,14 +31,14 @@
       </section>
     </nav>
   </header>
-  <main class="flex flex-col items-center">
+  <main itemscope itemtype="https://schema.org/TheaterEvent" class="flex flex-col items-center">
     <div class="mt-6">
       <img src="/img/frygten.webp" alt="" height="400" width="400" />
     </div>
-    <h1 class="mt-6 mb-2 text-left">
+    <h1 itemprop="name" class="mt-6 mb-2 text-left">
       Frygten for ikke at leve
     </h1>
-    <p class="prose-p: mx-3 mt-6 mb-6 text-left font-medium">
+    <p itemprop="about" class="prose-p: mx-3 mt-6 mb-6 text-left font-medium">
       En forestilling af JUNOS DISCIPLE I forestillingen “Frygten for ikke at
       leve” stiller vi os foran det spejl, der hedder Emilie Sannom. Emilie
       var berømt stuntkvinde og luftakrobat i 1920’ernes stumfilm. Hun var
@@ -56,44 +56,30 @@
     <h3 class="mt-6  text-md">Konsulent:</h3>
     <p class="prose-p: mt-3 mb-6 mx-3 text-center font-medium">Julie Mogensen
     </p>
+
     <div class="mt-6 text-md">
       <h2 class="text-center text-md">Spilletider</h2>
-      <div class="mb-5 font-semibold grid grid-cols-1 justify-items-center  gap-x-2">
-        <p class="my-1.5 col-span-2 gx-x-2">Tors - 4/8</p>
-        <button
-          class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">16:45</button>
-        <button
-          class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">20:15</button>
-      </div>
+      <div class="grid grid-cols-2 gap-y-6">
+        <div class="my-5 font-semibold grid grid-cols-1 justify-items-start">
+          <p itemprop="startDate" class="my-1.5 text-left">Tors - 4/8</p>
+          <button
+            class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">16:45</button>
+          <button
+            class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">20:15</button>
+        </div>
+        <div class="my-5 font-semibold grid grid-cols-1 justify-items-center gap-x-2">
+          <p itemprop="endDate" class="my-1.5 text-left">Fre - 5/8</p>
+          <button
+            class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">16:30</button>
 
-      <div class="my-5 font-semibold grid grid-cols-1 justify-items-center">
-        <p class="my-1.5 col-span-2">Fre - 5/8</p>
-        <button
-          class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">16:30</button>
+        </div>
       </div>
     </div>
 
     <a class="flex mt-10 mb-4" href="https://goo.gl/maps/iU2dTAz9Fj2gm8yt8" aria-label="Location">
-      <p class="prose-p: mx-4 text-center font-extrabold">
-        Venue: Xenon - Teaterhuset
+      <p itemprop="location" class="prose-p: mx-4 text-center font-extrabold underline underline-offset-8">
+        Venue: Xenon - Teaterhuset 📍
       </p>
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_178_142)">
-          <path d="M15 4.5L11 8.5L7 10L5.5 11.5L12.5 18.5L14 17L15.5 13L19.5 9" stroke="black" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M9 15L4.5 19.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M14.5 4L20 9.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M15 4.5L11 8.5L7 10L5.5 11.5L12.5 18.5L14 17L15.5 13L19.5 9" stroke="black" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M9 15L4.5 19.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M14.5 4L20 9.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </g>
-        <defs>
-          <clipPath id="clip0_178_142">
-            <rect width="24" height="24" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
     </a>
   </main>
   <footer class="mb-4 mt-[15vh] border-t pt-5">

@@ -30,13 +30,13 @@
       </section>
     </nav>
   </header>
-  <main class="flex flex-col items-center max-w-3xl mx-auto">
+  <main itemscope itemtype="https://schema.org/TheaterEvent" class="flex flex-col items-center max-w-3xl mx-auto">
     <div class="mt-6">
       <img src="img/whatfires.webp" alt="" height="400" width="400" />
     </div>
 
-    <h1 class="mt-6 mb-2">What fires together wires together</h1>
-    <p class="prose-p: mx-3 mt-6 mb-6 text-left font-medium">
+    <h1 temprop="name" class="mt-6 mb-2">What fires together wires together</h1>
+    <p itemprop="about" class="prose-p: mx-3 mt-6 mb-6 text-left font-medium">
       En forestilling af Astrid & Lotte Forestillingen “What Fires Together
       Wires Together” eksperimenterer i spændingsfeltet mellem dans/bevægelse
       og naturvidenskab. Den tager udgangspunkt i psykologen Donald Hebbs
@@ -52,40 +52,24 @@
     </p>
     <div class="mt-6">
       <h2 class="text-md text-center">Spilletider</h2>
-      <div class="my-5 font-semibold grid grid-cols-1 justify-items-center">
-        Tirs - 2/8
-        <button
-          class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">16:00</button>
-      </div>
-      <div class="my-5 font-semibold grid grid-cols-1 justify-items-center">
-        Ons - 3/8
-        <button
-          class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">17:30</button>
+      <div class="grid grid-cols-2 gap-y-6 gap-x-6">
+        <div itemprop="startDate" class="my-5 font-semibold grid grid-cols-1 justify-items-center">
+          Tirs - 2/8
+          <button
+            class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">16:00</button>
+        </div>
+        <div itemprop="endDate" class="my-5 font-semibold grid grid-cols-1 justify-items-center">
+          Ons - 3/8
+          <button
+            class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">17:30</button>
+        </div>
       </div>
     </div>
-    <p class="prose-p: mx-4 mt-6 mb-2 text-center font-extrabold">
-      VILDSKUD FESTIVAL
-    </p>
+
 
     <a class="flex" href="https://goo.gl/maps/twUqgTod98NCHFV98" aria-label="Location">
-      <p class="prose-p: text-center font-extrabold">Venue: ZeBU</p>
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_178_142)">
-          <path d="M15 4.5L11 8.5L7 10L5.5 11.5L12.5 18.5L14 17L15.5 13L19.5 9" stroke="black" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M9 15L4.5 19.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M14.5 4L20 9.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M15 4.5L11 8.5L7 10L5.5 11.5L12.5 18.5L14 17L15.5 13L19.5 9" stroke="black" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M9 15L4.5 19.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M14.5 4L20 9.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </g>
-        <defs>
-          <clipPath id="clip0_178_142">
-            <rect width="24" height="24" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
+      <p itemprop="location" class="prose-p: mx-4 text-center font-extrabold underline underline-offset-8">Venue: ZeBU
+        📍</p>
     </a>
   </main>
   <footer class="mb-4 mt-[15vh] border-t pt-5">

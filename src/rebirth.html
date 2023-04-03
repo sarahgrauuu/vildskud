@@ -30,14 +30,14 @@
       </section>
     </nav>
   </header>
-  <main class="flex flex-col items-center">
+  <main itemscope itemtype="https://schema.org/TheaterEvent" class="flex flex-col items-center">
     <div class="mt-6">
-      <img src="img/rebirth.webp" alt="" height="400" width="400" />
+      <img itemprop="image" src="img/rebirth.webp" alt="" height="400" width="400" />
     </div>
-    <h1 class="mt-6 mb-2 text-left">
+    <h1 itemprop="name" class="mt-6 mb-2 text-left">
       Re-birth
     </h1>
-    <p class="prose-p: mx-3 mt-6 mb-6 text-left font-medium">
+    <p itemprop="about" class="prose-p: mx-3 mt-6 mb-6 text-left font-medium">
       Forestilling af af Where is the rabbithole Året er 2222, vi er i et
       underjordisk genfødselskammer - et såkaldt SkaberLab - hvor mennesker
       bliver skabt og genskabt, for at kunne leve i århundreder. . I forsøget
@@ -57,7 +57,7 @@
     <div class="mt-6 text-md">
       <h2 class="text-center text-md">Spilletider</h2>
       <div class="my-5 font-semibold grid grid-cols-1 gap-x-2 justify-items-center">
-        <p class="my-1.5 col-span-3">Tors - 4/8</p>
+        <p itemprop="startDate" class="my-1.5 text-left">Tors - 4/8</p>
         <button
           class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">15:00</button>
         <button
@@ -66,7 +66,7 @@
           class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">20:15</button>
       </div>
       <div class="my-5 font-semibold grid grid-cols-1 gap-x-2 justify-items-center">
-        <p class="my-1.5 col-span-3">Fre - 5/8</p>
+        <p itemprop="endDate" class="my-1.5 text-left">Fre - 5/8</p>
         <button
           class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">15:00</button>
         <button
@@ -77,24 +77,8 @@
     </div>
 
     <a class="flex" href="https://goo.gl/maps/5dhGXoy2cbfEnzye9" aria-label="Location">
-      <p class="prose-p: text-center font-extrabold">Venue: Downunder</p>
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_178_142)">
-          <path d="M15 4.5L11 8.5L7 10L5.5 11.5L12.5 18.5L14 17L15.5 13L19.5 9" stroke="black" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M9 15L4.5 19.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M14.5 4L20 9.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M15 4.5L11 8.5L7 10L5.5 11.5L12.5 18.5L14 17L15.5 13L19.5 9" stroke="black" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M9 15L4.5 19.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M14.5 4L20 9.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </g>
-        <defs>
-          <clipPath id="clip0_178_142">
-            <rect width="24" height="24" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
+      <p itemprop="location" class="prose-p: mx-4 text-center font-extrabold underline underline-offset-8"> Venue:
+        Downunder 📍 </p>
     </a>
   </main>
   <footer class="mb-4 mt-[15vh] border-t pt-5">

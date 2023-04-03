@@ -31,14 +31,14 @@
     </nav>
   </header>
   </nav>
-  <main class="flex flex-col items-center">
+  <main itemscope itemtype="https://schema.org/TheaterEvent" class="flex flex-col items-center">
     <div class="mt-6">
       <img src="img/vildmedmig.webp" alt="" height="400" width="400" />
     </div>
-    <h1 class="mt-6 mb-2 text-left">
+    <h1 itemprop="name" class="mt-6 mb-2 text-left">
       VILD MED MIG
     </h1>
-    <p class="prose-p: mx-3 mt-6 mb-6 text-left font-medium">
+    <p itemprop="about" class="prose-p: mx-3 mt-6 mb-6 text-left font-medium">
       Forestilling af TEATER MANNEQUIN Velkommen! Til et univers i
       kærlighedens navn. Vi inviterer dig ind i en intim, musikalsk og
       glimtende undersøgelse af selvbilleder, kærlighed og higen efter at
@@ -53,41 +53,26 @@
 
     <div class="mt-6 text-md">
       <h2 class="text-center text-md">Spilletider</h2>
-      <div class="mb-5 font-semibold grid grid-cols-1 justify-items-center">
-        <p class="my-1.5"> Tirs - 2/8</p>
-        <button
-          class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">18:30</button>
-      </div>
-      <div class="my-5 font-semibold grid grid-cols-1 gap-x-2 justify-items-center">
-        <p class="my-1.5 col-span-2">Ons - 3/8</p>
-        <button
-          class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">16:15</button>
-        <button
-          class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">20:00</button>
+      <div class="grid grid-cols-2 gap-y-6">
+        <div class="my-5 font-semibold grid grid-cols-1 justify-items-start gap-x-2">
+          <p itemprop="startDate" class="my-1.5 text-left"> Tirs - 2/8</p>
+          <button
+            class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">18:30</button>
+        </div>
+        <div class="my-5 font-semibold grid grid-cols-1 justify-items-start gap-x-2">
+          <p itemprop="endDate" class="my-1.5 text-left">Ons - 3/8</p>
+          <button
+            class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">16:15</button>
+          <button
+            class=" mb-4 row-start-6 row-end-7 px-3 py-0.5 font-medium border border-b-4 border-r-4 bg-white border-orange active:border-blue focus:bg-green focus:border-blue rounded-lg shadow-lg">20:00</button>
+        </div>
       </div>
     </div>
 
     <a class="flex" href="https://goo.gl/maps/xYENue5B6HMHGu3x7" aria-label="Location">
-      <p class="prose-p: text-center font-extrabold">
-        Venue: VOX - Teaterhuset
+      <p itemprop="location" class="prose-p: mx-4 text-center font-extrabold underline underline-offset-8">
+        Venue: VOX - Teaterhuset 📍
       </p>
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_178_142)">
-          <path d="M15 4.5L11 8.5L7 10L5.5 11.5L12.5 18.5L14 17L15.5 13L19.5 9" stroke="black" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M9 15L4.5 19.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M14.5 4L20 9.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M15 4.5L11 8.5L7 10L5.5 11.5L12.5 18.5L14 17L15.5 13L19.5 9" stroke="black" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M9 15L4.5 19.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M14.5 4L20 9.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </g>
-        <defs>
-          <clipPath id="clip0_178_142">
-            <rect width="24" height="24" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
     </a>
   </main>
   <footer class="mb-4 mt-[15vh] border-t pt-5">
